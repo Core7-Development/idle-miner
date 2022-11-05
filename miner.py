@@ -85,7 +85,7 @@ while sellLoop == 1:
     pyautogui.press("enter")
 
     pyperclip.copy(';sell')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
 
@@ -93,7 +93,7 @@ while sellLoop == 1:
 
     if hours > hours-1 and hour_run == 0:
         pyperclip.copy(';hourly')
-        pyautogui.hotkey('command', 'v')
+        pyautogui.hotkey('ctrl', 'v')
         pyautogui.press("enter")
         print("[Action]: Hour reward claimed")
         
@@ -102,7 +102,7 @@ while sellLoop == 1:
 
     if loops > 2:
         pyperclip.copy(';level')
-        pyautogui.hotkey('command', 'v')
+        pyautogui.hotkey('ctrl', 'v')
         pyautogui.press("enter")
         print("[Action]: Leveled")
         
@@ -113,56 +113,56 @@ while sellLoop == 1:
     string = ';up '+pet+' a'
     
     pyperclip.copy(string)
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Upgrading "+ pet.title() +" pet")
     
     time.sleep(actionWait)
     
     pyperclip.copy(';sell')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
     
     time.sleep(wait_time)
 
     pyperclip.copy(';fish')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Fished")
 
     time.sleep(wait_time)
 
     pyperclip.copy(';up b a')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Upgraded backpack")
     
     time.sleep(actionWait)
 
     pyperclip.copy(';sell')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
 
     time.sleep(wait_time)
 
     pyperclip.copy(';up p a')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Upgraded pickaxe")
     
     time.sleep(wait_time)
 
     pyperclip.copy(';hunt')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Hunted")
 
     time.sleep(actionWait)
 
     pyperclip.copy(';sell')
-    pyautogui.hotkey('command', 'v')
+    pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
     
@@ -182,8 +182,8 @@ while sellLoop == 1:
     
     if counter_birth > 50:
         print()
-        pyperclip.copy(';rebirth')
-        pyautogui.hotkey('command', 'v')
+        pyperclip.copy('/rebirth')
+        pyautogui.hotkey('ctrl', 'v')
         pyautogui.press("enter")
         print("[Action]: You just started a new life")
 
