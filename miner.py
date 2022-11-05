@@ -81,10 +81,10 @@ while sellLoop == 1:
         print()
         time.sleep(wait_time)
     
-    pyperclip.copy(';sell')
+    pyperclip.copy('/sell')
     pyautogui.press("enter")
 
-    pyperclip.copy(';sell')
+    pyperclip.copy('/sell')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
@@ -92,7 +92,7 @@ while sellLoop == 1:
     time.sleep(wait_time)
 
     if hours > hours-1 and hour_run == 0:
-        pyperclip.copy(';hourly')
+        pyperclip.copy('/hourly')
         pyautogui.hotkey('ctrl', 'v')
         pyautogui.press("enter")
         print("[Action]: Hour reward claimed")
@@ -101,7 +101,7 @@ while sellLoop == 1:
         time.sleep(wait_time)
 
     if loops > 2:
-        pyperclip.copy(';level')
+        pyperclip.copy('/level')
         pyautogui.hotkey('ctrl', 'v')
         pyautogui.press("enter")
         print("[Action]: Leveled")
@@ -110,7 +110,7 @@ while sellLoop == 1:
         time.sleep(wait_time)
 
     pet = random.choice(pets)
-    string = ';up '+pet+' a'
+    string = '/up '+pet+' a'
     
     pyperclip.copy(string)
     pyautogui.hotkey('ctrl', 'v')
@@ -119,49 +119,49 @@ while sellLoop == 1:
     
     time.sleep(actionWait)
     
-    pyperclip.copy(';sell')
+    pyperclip.copy('/sell')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
     
     time.sleep(wait_time)
 
-    pyperclip.copy(';fish')
+    pyperclip.copy('/fish')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Fished")
 
     time.sleep(wait_time)
 
-    pyperclip.copy(';up b a')
+    pyperclip.copy('/up b a')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Upgraded backpack")
     
     time.sleep(actionWait)
 
-    pyperclip.copy(';sell')
+    pyperclip.copy('/sell')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
 
     time.sleep(wait_time)
 
-    pyperclip.copy(';up p a')
+    pyperclip.copy('/up p a')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Upgraded pickaxe")
     
     time.sleep(wait_time)
 
-    pyperclip.copy(';hunt')
+    pyperclip.copy('/hunt')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Hunted")
 
     time.sleep(actionWait)
 
-    pyperclip.copy(';sell')
+    pyperclip.copy('/sell')
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press("enter")
     print("[Action]: Sold")
